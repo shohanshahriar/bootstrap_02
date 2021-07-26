@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Bootstrap Form</title>
+  </head>
+  <body>
+    
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="for_form">
+    <form>
+    <!--full_name-->  
+    <div class="mb-3">
+    <label for="u_name" class="form-label">Full Name</label>
+    <input type="text" class="form-control u_name" id="u_name" name="u_name" required>
+  <!--email-->    
+  <div class="mb-3">
+    <label for="u_email " class="form-label">Email address</label>
+    <input type="email" class="form-control u_email" id="u_email" name="u_email" required>
+    <div id="" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <!--username-->
+  <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username">
+</div>
+  <!--password-->
+  <div class="mb-3">
+    <label for="u_pass" class="form-label">Password</label>
+    <input type="password" class="form-control u_pass" id="u_pass" name="u_pass" required>
+  </div>
+  <!--choose your course-->
+  <div class="mb-3">
+    <label for="u_course" class="form-label">Your Preferable Courses</label>
+    <select class="form-select" id="u_course" name="u_course">
+    <option value="1">Web Development</option>
+    <option value="2">Graphics Design</option>
+    <option value="3">Machine learning</option>
+    <option value="3">Data Entry</option>
+    </select>
+  </div>
+  <!--data list-->
+  <div class="mb-3">
+<label for="DataList" class="form-label">Choose your Hometown</label>
+<input class="form-control" list="datalistOptions" id="DataList" placeholder="Type to search...">
+<datalist id="datalistOptions">
+  <option value="Dhaka">
+  <option value="Chittagong">
+  <option value="Syhlet">
+  <option value="Rajshahi">
+  <option value="Khulna">
+</datalist>
+</div>
+<!--file upload-->
+<div class="mb-3">
+  <label for="u_file" class="form-label">Upload your file</label>
+  <input class="form-control u_file" type="file" id="u_file" name="u_file" multiple>
+</div>
+
+<!--message-->
+  <div class="mb-3">
+  <label for="u_msg" class="form-label">Your Thoughts</label>
+  <textarea class="form-control" id="u_msg" rows="3" name="u_msg" required></textarea>
+</div>
+  <!--checkbox-->
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <!--submit-->
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<form class="row g-3 mb-3 needs-validation" novalidate>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+   <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2>
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+    <!-- JS links-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/script.js"></script>
+  </body>
+  </html>
